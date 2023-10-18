@@ -4,7 +4,7 @@ body{
 }
 
 h1{
-    color: orange;
+    color: turquoise;
     text-align: center;
 }
 
@@ -12,5 +12,5 @@ li{
     display: grid;
     position: relative;
     left: 650px;
-    
+    color: turquoise;
 }
