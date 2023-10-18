@@ -1,3 +1,16 @@
-.rootRoot {
-    color: red;
+body{
+    background-color: olive;
+    width: 100%;
+}
+
+h1{
+    color: orange;
+    text-align: center;
+}
+
+li{
+    display: grid;
+    position: relative;
+    left: 650px;
+    
 }
