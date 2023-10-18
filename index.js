@@ -9,9 +9,28 @@ const users = [
     { name: "Robert", age: 72, occupation: "driver" },
 ];
 
-function main() {
+function main() { 
+  const root = document.getElementById("root");
 
+  if (root){
+  const h1 = document.createElement("h1");
+  h1.innerHTML = "FREELANCERS";
+  root.appendChild(h1);
+  } else {
+    console.log("Not Working");
 }
 
-//call the main function
-main();
+if (root){
+    const li = document.createElement("li");
+    const listTwo = document.createElement("li");
+    li.innerHTML = "Unordered List";
+    listTwo.innerHTML = "Unordered List";
+    root.appendChild(li);
+    root.appendChild(listTwo);
+} else { 
+    console.log("error");
+}
+
+}
+main()
+
