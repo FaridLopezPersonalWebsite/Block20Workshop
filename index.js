@@ -20,17 +20,40 @@ function main() {
     console.log("Not Working");
 }
 
-if (root){
-    const li = document.createElement("li");
-    const listTwo = document.createElement("li");
-    li.innerHTML = "Unordered List";
-    listTwo.innerHTML = "Unordered List";
-    root.appendChild(li);
-    root.appendChild(listTwo);
-} else { 
-    console.log("error");
-}
+// if (root){
+//     const li = document.createElement("li");
+//     const listTwo = document.createElement("li");
+//     li.innerHTML = "Unordered List";
+//     listTwo.innerHTML = "Unordered List";
+//     root.appendChild(li);
+//     root.appendChild(listTwo);
+// } else { 
+//     console.log("error");
+// }
 
 }
 main()
+
+function main2() {
+    
+  const root = document.getElementById("root");
+
+  if (root) {
+    for (let i = 0; i < users.length; i++) {
+      let listName = document.createElement("li");
+      let listAge = document.createElement("li");
+      let listOccupation = document.createElement("li");
+      listName.innerHTML = users[i].name;
+      root.appendChild(listName);
+      listAge.innerHTML = users[i].age;
+      root.appendChild(listAge);
+      listOccupation.innerHTML = users[i].occupation;
+      root.appendChild(listOccupation);
+        }
+  } else {
+      console.error("List element not found");
+    }
+};
+
+main2()
 
