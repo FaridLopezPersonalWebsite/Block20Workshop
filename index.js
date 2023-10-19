@@ -21,11 +21,11 @@ function main() {
 }
 
 // if (root){
-//     const li = document.createElement("li");
-//     const listTwo = document.createElement("li");
-//     li.innerHTML = "Unordered List";
-//     listTwo.innerHTML = "Unordered List";
-//     root.appendChild(li);
+//     const ul = document.createElement("ul");
+//     const listTwo = document.createElement("ul");
+//     ul.innerHTML = "Unordered list";
+//     listTwo.innerHTML = "Unordered list";
+//     root.appendChild(ul);
 //     root.appendChild(listTwo);
 // } else { 
 //     console.log("error");
@@ -40,9 +40,9 @@ function main2() {
 
   if (root) {
     for (let i = 0; i < users.length; i++) {
-      let listName = document.createElement("li");
-      let listAge = document.createElement("li");
-      let listOccupation = document.createElement("li");
+      let listName = document.createElement("ul");
+      let listAge = document.createElement("ul");
+      let listOccupation = document.createElement("ul");
       listName.innerHTML = users[i].name;
       root.appendChild(listName);
       listAge.innerHTML = users[i].age;
@@ -51,7 +51,7 @@ function main2() {
       root.appendChild(listOccupation);
         }
   } else {
-      console.error("List element not found");
+      console.error("list element not found");
     }
 };
 
